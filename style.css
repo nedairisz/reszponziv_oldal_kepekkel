@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+header, nav, article, section, footer{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    margin: 5px;
+}
+body{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+.kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 5px;
+}
+img{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+}
+nav{
+    background-color: rgb(116, 116, 116);
+}
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 0;
+}
+nav li{
+    text-align: center;
+    
+}
+nav a{
+    text-decoration: none;
+    color: rgb(173, 53, 6);
+}
+@media screen and (max-width: 450px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+    .kepek{
+        grid-template-columns: 1fr;
+    }
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+  }

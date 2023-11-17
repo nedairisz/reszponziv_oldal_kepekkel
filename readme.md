@@ -1,0 +1,2 @@
+# Reszponzív képgaléria
+
